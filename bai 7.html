@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num1=parseInt(prompt("số thứ nhất"))
+    let num2=parseInt(prompt("số thứ hai"))
+    let number=[num1,num2];
+    function hoandoi() {
+        let first = 0;
+        let last = number.length - 1;
+        while (first < last) {
+            let b = number[first];
+            number[first] = number[last];
+            number[last] = b;
+            first++;
+            last--;
+        }document.write(number)
+    }hoandoi(number)
+</script>
+</body>
+</html>

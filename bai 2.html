@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let weight=parseInt(prompt("nhập chiều dài"));
+    let height=parseInt(prompt("nhập chiều rộng"));
+    let area=0;
+    let perimeter=0;
+    function calculate(weight,height) {
+      area=weight*height;
+      perimeter=2*(weight+height);
+      document.write("diện tích="+area+"  "+"Chu vi = "+perimeter)
+    }
+    calculate(weight,height)
+</script>
+</body>
+</html>

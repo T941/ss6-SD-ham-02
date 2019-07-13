@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrNum=[1,2,3,4,5]
+    let first=0
+    let last=arrNum.length-1
+    function hoandoi() {
+        while (first<last){
+            let a=arrNum[first];
+            arrNum[first]=arrNum[last];
+            arrNum[last]=a
+            first++
+            last--
+        } document.write(arrNum)
+    } hoandoi(arrNum)
+</script>
+</body>
+</html>

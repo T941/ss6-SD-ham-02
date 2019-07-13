@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num1=parseInt(prompt("Số thứ nhất"));
+     let num2=parseInt(prompt("Số thứ hai"));
+     let num3=parseInt(prompt("số thứ 3"));
+  let number=[num1,num2,num3];
+    let min=number[num1];
+function checkMin(number) {
+    for (let i=0;i<number.length;i++){
+       if (number[i]<min){
+           min=number[i];
+       }
+    }
+    return min
+}
+let min1=checkMin(number);
+alert(min1);
+
+</script>
+</body>
+</html>
